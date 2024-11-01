@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+:root {
+--stone100: hsl(30, 54%, 90%);
+--stone150: hsl(30, 18%, 87%);
+--stone600: hsl(30, 10%, 34%);
+--stone900: hsl(24, 5%, 18%);
+--brown800: hsl(14, 45%, 36%);
+--rose800: hsl(332, 51%, 32%);
+--rose50: hsl(330, 100%, 98%);
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+}
