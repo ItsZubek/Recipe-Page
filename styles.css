@@ -98,6 +98,7 @@ ul li::marker {
 hr {
     margin: 25px 0;
     border-bottom-width: 0px;
+    border-top-color: rgba(0,0,0,0.3);
 }
 ol {
     margin-bottom: 0px;
@@ -112,4 +113,30 @@ ol li {
 ol li::marker {
     color: var(--brown800);
     font-weight: 600;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Outfit', sans-serif;
+    border-collapse: collapse;
+}
+table th {
+    width: 50%;
+    text-align: left;
+    font-weight: 400;
+    color: var(--stone600);
+    font-size: 0.9rem;
+    text-indent: 30px;
+}
+table td {
+    width: 50%;
+    font-weight: 600;
+    color: var(--brown800);
+    font-size: 0.9rem;
+}
+table tr:not(:first-of-type) {
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+table tr th, table tr td {
+    padding: 10px 0px;
 }
